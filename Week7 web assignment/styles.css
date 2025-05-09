@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+button {
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.bounce {
+  animation: bounce 0.5s ease;
+}
+
+/* Themes */
+.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-theme {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+#clickCount {
+  font-size: 18px;
+  margin-top: 10px;
+  transition: opacity 0.3s ease;
+}
